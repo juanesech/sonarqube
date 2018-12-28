@@ -47,24 +47,7 @@ RUN set -x \
     && chown -R sonarqube:sonarqube sonarqube \
     && rm sonarqube.zip* \
     && cd  $SONARQUBE_HOME/extensions/plugins/ \
-    && rm -rf sonar-scm-git-plugin-*.jar \
-      sonar-scm-svn-plugin-*.jar \
-      sonar-java-plugin-*.jar \
-      sonar-javascript-plugin-*.jar \
-      sonar-typescript-plugin-*.jar \
-      sonar-php-plugin-*.jar \
-      sonar-python-plugin-*jar \
-      sonar-csharp-plugin-*.jar \
-      sonar-xml-plugin-*.jar \
-      sonar-ldap-plugin-*.jar \
-      sonar-github-plugin-*.jar \
-      sonar-go-plugin-*.jar \
-      sonar-gitlab-plugin-*.jar \
-      sonar-findbugs-plugin-*.jar \
-      sonar-pitest-plugin-*.jar \
-      sonar-dependency-check-plugin-*.jar \
-      sonar-auth-oidc-plugin-*.jar \
-      sonar-softvis3d-plugin-*.jar \
+    && rm -rf sonar-scm-git-plugin-*.jar sonar-scm-svn-plugin-*.jar sonar-java-plugin-*.jar sonar-javascript-plugin-*.jar sonar-typescript-plugin-*.jar sonar-php-plugin-*.jar sonar-python-plugin-*jar sonar-csharp-plugin-*.jar sonar-xml-plugin-*.jar sonar-ldap-plugin-*.jar sonar-github-plugin-*.jar sonar-go-plugin-*.jar sonar-gitlab-plugin-*.jar sonar-findbugs-plugin-*.jar sonar-pitest-plugin-*.jar sonar-dependency-check-plugin-*.jar sonar-auth-oidc-plugin-*.jar sonar-softvis3d-plugin-*.jar \
     && wget --no-verbose https://repox.sonarsource.com/sonarsource-public-builds/org/sonarsource/scm/git/sonar-scm-git-plugin/$SQ_GIT_VERSION/sonar-scm-git-plugin-$SQ_GIT_VERSION.jar \
     && wget --no-verbose https://repox.sonarsource.com/sonarsource-public-builds/org/sonarsource/scm/svn/sonar-scm-svn-plugin/$SQ_SVN_VERSION/sonar-scm-svn-plugin-$SQ_SVN_VERSION.jar \
     && wget --no-verbose https://repox.sonarsource.com/sonarsource-public-builds/org/sonarsource/java/sonar-java-plugin/$SQ_JAVA_VERSION/sonar-java-plugin-$SQ_JAVA_VERSION.jar \
