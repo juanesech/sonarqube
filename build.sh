@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-docker build -t juanesech/sonarqube docker
+docker build -t juanesech/sonarqube .
